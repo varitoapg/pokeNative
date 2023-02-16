@@ -80,10 +80,9 @@
   },
   "private": true,
   "jest": {
-    "preset": "jest-expo",
-    "testEnvironment": "jsdom",
+    "preset": "react-native",
     "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@fortawesome/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+      "node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation)"
     ],
     "moduleFileExtensions": [
       "ts",
@@ -92,10 +91,6 @@
       "jsx",
       "json",
       "node"
-    ],
-    "setupFilesAfterEnv": [
-      "./src/jest.setup.ts",
-      "@testing-library/jest-native/extend-expect"
     ]
   }
 }
