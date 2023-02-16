@@ -3,3 +3,7 @@ export interface PokemonBasicData {
   position: number;
   image: string;
 }
+
+export interface CurrentPokemonState {
+  currentPokemon: PokemonBasicData[];
+}

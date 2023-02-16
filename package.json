@@ -7,8 +7,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest --passWithNoTests",
-    "test:coverage": "jest --watchAll=false --collect-coverage --passWithNoTests",
+    "test": "jest",
+    "test:coverage": "jest --watchAll=false --collect-coverage",
     "prepare": "husky install"
   },
   "eslintConfig": {
