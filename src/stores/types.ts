@@ -1,6 +1,6 @@
 export interface PokemonBasicData {
   name: string;
-  position: number;
+  position: string;
   image: string;
 }
 
