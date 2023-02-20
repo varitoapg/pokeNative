@@ -7,6 +7,8 @@ module.exports = {
     "plugin:react/recommended",
     "xo",
     "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:react-native/all",
   ],
   overrides: [
@@ -42,6 +44,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    project: "tsconfig.json",
   },
   plugins: [
     "react",
