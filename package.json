@@ -9,7 +9,8 @@
     "web": "expo start --web",
     "test": "jest",
     "test:coverage": "jest --watchAll=false --collect-coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "clear_jest": "jest --clearCache"
   },
   "eslintConfig": {
     "extends": [
