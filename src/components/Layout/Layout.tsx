@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { View, Text } from "react-native";
-import useApi from "../../hooks/useApi";
+import useApi from "../../hooks/useApi/useApi";
 import PokemonContext from "../../stores/contexts/pokemonContext/pokemonContext";
 
 const Layout = (): JSX.Element => {
@@ -15,7 +15,7 @@ const Layout = (): JSX.Element => {
       await getAllPokemon();
     })();
   }, [getAllPokemon]);
-  return <View>{<Text>{currentPokemon[141]?.name}</Text>}</View>;
+  return <View>{<Text>{currentPokemon[1]?.name}</Text>}</View>;
 };
 
 export default Layout;
