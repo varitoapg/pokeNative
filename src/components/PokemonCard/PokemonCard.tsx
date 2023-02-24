@@ -18,7 +18,12 @@ const PokemonCard = ({
     >
       <Text style={styles.title}>{name}</Text>
       <Text style={styles.title}>{`# ${position}`}</Text>
-      <Image style={styles.tinyLogo} source={{ uri: image }}></Image>
+      <Image
+        style={styles.tinyLogo}
+        source={{ uri: image }}
+        accessible={true}
+        accessibilityLabel={`${name} image`}
+      ></Image>
     </LinearGradient>
   </View>
 );
