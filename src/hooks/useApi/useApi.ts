@@ -20,7 +20,8 @@ const useApi = () => {
     const { results } = response.data;
 
     const pokemonBasicInformation: PokemonBasicData[] = [];
-    results.forEach((pokemon, index) => {
+
+    for (const [index, pokemon] of results.entries()) {
       pokemonBasicInformation.push({
         image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${(
           index + 1
@@ -28,7 +29,7 @@ const useApi = () => {
         name: pokemon.name,
         position: (index + 1).toString(),
       });
-    });
+    }
 
     pokemonDispatch(getAllPokemonActionsCreator(pokemonBasicInformation));
   }, [pokemonDispatch, baseUrl, firstGenerationLimit]);
